@@ -1,0 +1,266 @@
+button
+{
+	width:80;
+	border: 1px solid rgb(220, 220, 220);
+	Border-radius:0;
+	padding:1;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	background: -moz-linear-gradient(center top , rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) repeat scroll 0% 0% rgb(237, 237, 237);
+}
+body {
+//background-image:url("a.jpg");
+background-color:#F2F2F2;
+background-size:100% 100%;
+background-repeat:no-repeat;
+background-attachment:fixed;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+text-align: center;
+height: 100%;
+min-height:100%;			/* make sure IE centers the page too */
+}
+
+
+#wrapper {
+	//padding-right: 20px;
+width:80%;
+	min-height: 100%;
+    height: auto;
+    height: 100%;
+    margin: 0 auto -80px; /* the bottom margin is the negative value of the footer's height */
+				/* center the page */
+}
+
+#content {
+	background-color: #fff;
+	border: 1px solid #000;
+	float: left;
+	font-family: timesnewroman;
+	padding: 20px 30px;
+	text-align: left;
+	width: 100%;
+				/* fill up the entire div */
+}
+#menu {
+float: left;
+border: 1px solid #000;
+border-bottom: none;		/* avoid a double border */
+clear: both;				/* clear:both makes sure the content div doesn't float next to this one but stays under it */
+width:100%;
+height:30px;
+padding: 10 30 0 30px;
+background-color:  #44699C; /* userbar colour*/
+text-align: left;
+font-size: 95%;
+border-radius:0px;
+}
+
+#menu a.nomenu:hover {
+	background-color:  	#44699C;/*item hover bg*/
+}
+#menu b.wel
+{
+	color:#c1c0c0;/*item color*/
+}
+#menu a:hover {
+	background-color:  	#B32031;/*item hover bg*/
+}
+
+#userbar {
+	background-color: #44699C;
+	float: right;
+	//width: 60%;
+}
+
+/* begin table styles */
+table {
+border-collapse:separate;
+    border:solid black 2px;
+    border-radius:0px;
+    -moz-border-radius:0px;
+	width: 100%;
+}
+
+table a {
+	color: #08298A;
+        text-decoration: none;
+}
+
+table a:hover {
+	color:#0B4C5F;
+	text-decoration: none;
+}
+
+th {
+	background-color: #8b9dc3;
+	color: #000000;
+	font-style:italic;
+	//font-style:bold;
+}
+
+td {
+	padding: 3px;
+	font-style:italic;
+}
+
+/* Begin font styles */
+h1, #footer {
+	font-family: timesnewroman;
+	color: #44699C;
+}
+
+h3 {margin: 0; padding: 0;}
+
+/* Menu styles */
+.item {
+	background-color: #073472; /*bg color*/
+	border: 1px solid #032472;
+	color: white; /*text color*/
+	font-family: timesnewroman;
+	padding: 5px;
+	text-decoration: none;
+	font-style:italic;
+}
+.title {
+	//background-color: #073472; /*bg color*/
+	//border: 1px solid #032472;
+	color: rgb(68, 105, 156); /*text color*/
+	font-family: timesnewroman;
+	padding: 5px;
+	text-decoration: none;
+	//font-style:italic;
+}
+.leftpart {
+	width: 70%;
+}
+
+.rightpart {
+	width: 30%;
+}
+
+.small {
+	font-size: 75%;
+	color: #373737;
+}
+
+
+.topic-post {
+	height: 100px;
+	overflow: auto;
+}
+
+.post-content {
+	padding: 30px;
+}
+
+textarea {
+	width: 500px;
+	height: 200px;
+}
+
+
+
+
+/*
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -70px; 
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.site-footer, .page-wrap:after {
+clear: both;
+  /* .push must be the same height as footer */
+  height: 70px; 
+}
+html
+{
+height : 100%;
+min-height: 100%;
+}*/
+
+
+
+
+#footer, .push {
+//position:absolute;
+clear: both;
+//text-align:center;
+//bottom: 0;
+ font-size: 65%;
+//padding: 5 0 0 0;
+//width:100%;
+ //margin-top:-100px;
+height: 70px; /* .push must be the same height as .footer */
+}
+* {
+    margin: 0;
+}
+.site-footer
+{
+	font-size:65%;
+}
+
+input[type=submit]
+{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	//color:#777777;
+	font-family:timesnewroman;
+	//font-size:12px;
+	font-weight:bold;
+	padding:6px 13px;
+	text-decoration:none;
+}
+a {
+	color: black;
+        
+}
+.user-post
+{
+	width: 20%;
+        //height:100px;
+}
+.admin
+{
+	background-color:#0099CC;
+}
+label{  
+    width:200px;       
+    background-color:#073472; 
+    color:white; 
+    
+    position:relative;
+    
+    
+    display:inline-block;    
+    vertical-align:middle; 
+}
+.box{
+    width:20px;
+    background-color: blue; 
+     
+    position:relative;
+    
+         
+    vertical-align:middle; 
+}
+
+
+<link type="text/css" rel="stylesheet" media="all" href="css/chat.css" />
+<link type="text/css" rel="stylesheet" media="all" href="css/screen.css" />
+ 
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" media="all" href="css/screen_ie.css" />
+<![endif]-->

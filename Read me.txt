@@ -1,0 +1,15 @@
+0 - student
+1 - admin
+2 - banned
+3 - deleted
+4 - deactivated
+5 - moderator
+6 - teacher
+
+image folder == profile pictures.
+smile == emoticons
+vid == video player
+
+$typ!='application/vnd.openxmlformats-officedocument.wordprocessingml.document' == word type
+
+$typ!='application/vnd.openxmlformats-officedocument.presentationml.presentation' == ppt
