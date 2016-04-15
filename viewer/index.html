@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+    <title>CLE Doc Viewer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/flexpaper.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/flexpaper.js"></script>
+    <script type="text/javascript" src="js/flexpaper_handlers.js"></script>
+    
+    
+</head>
+<?php
+$mat = $_GET['name'];
+echo $mat;
+?>
+<body>
+
+<div id="documentViewer" class="flexpaper_viewer" ></div>
+<script type="text/javascript">
+    function getDocumentUrl(document)
+    {
+        return "php/services/view.php?doc={doc}&format={format}&page={page}".replace("{doc}",document);
+    }
+
+    var startDocument = "Paper";
+    var path = "'docs/<?php echo $mat; ?>.swf'";
+    document.write(path);
+    $('#documentViewer').FlexPaperViewer
+    (
+            { config : 
+            	{
+
+                SWFFile :  document.write(path),
+
+                Scale : 0.6,
+                ZoomTransition : 'easeOut',
+                ZoomTime : 0.5,
+                ZoomInterval : 0.2,
+                FitPageOnLoad : true,
+                FitWidthOnLoad : false,
+                FullScreenAsMaxWindow : false,
+                ProgressiveLoading : false,
+                MinZoomSize : 0.2,
+                MaxZoomSize : 5,
+                SearchMatchAll : false,
+                InitViewMode : 'Portrait',
+                RenderingOrder : 'flash',
+                StartAtPage : '',
+
+                ViewModeToolsVisible : true,
+                ZoomToolsVisible : true,
+                NavToolsVisible : true,
+                CursorToolsVisible : true,
+                SearchToolsVisible : true,
+                WMode : 'window',
+                localeChain: 'en_US'
+            	}
+            }
+    );
+</script>
+
+</body>
+</html>
